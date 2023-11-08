@@ -34,6 +34,8 @@ import { ModelSelect } from './ModelSelect';
 import { SystemPrompt } from './SystemPrompt';
 import { TemperatureSlider } from './Temperature';
 
+import appsData from '@/apps.json';
+
 interface Props {
   stopConversationRef: MutableRefObject<boolean>;
 }
@@ -436,8 +438,32 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                   />
                 </div>
 
-                {/* <div className="flex h-full flex-col space-y-4 rounded-lg border border-neutral-200 p-4 dark:border-neutral-600">
-                      <ModelSelect />
+                <div className="h-full space-y-4 rounded-lg border border-neutral-200 p-4 dark:border-neutral-600 w-auto max-w-full">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {appsData.map((app, index) => (
+      <div className="bg-white rounded-xl shadow-lg p-4" key={index}>
+        <div className="items-center space-x-4">
+        <div className="shrink-0 flex justify-center items-center">
+            <img className="h-12 w-12" src={app.icon} alt={app.name + ' Logo'}/>
+          </div>
+          <div>
+            <div className="text-xl font-medium text-black">{app.name}</div>
+            <p className="text-gray-500">{app.description}</p>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+现在有的问题是他下方被遮盖显示不全
+但不应当直接修改这个问题而应当调整逻辑
+默认应用应带有应用说明，后续新建的应用也应该有说明
+然后没选应用的时候才显示这个页面，就可以隐藏输入框了
+
+
+                {/* 此处添加若干个按钮，点击后可以选择不同的Prompt */}
+
+                {/* <ModelSelect />
 
                       <SystemPrompt
                         conversation={selectedConversation}
@@ -458,8 +484,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                             value: temperature,
                           })
                         }
-                      />
-                    </div> */}
+                      /> */}
               </div>
             </>
           ) : (

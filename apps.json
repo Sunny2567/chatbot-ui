@@ -1,0 +1,70 @@
+[
+    {
+      "name": "ChitChat",
+      "icon": "/app-store.png",
+      "description": "You have a new message!"
+    },
+    {
+      "name": "Another App",
+      "icon": "/app-store.png",
+      "description": "You have a notification!"
+    },
+    {
+        "name": "Another App",
+        "icon": "/app-store.png",
+        "description": "You have a notification!"
+      },
+      {
+        "name": "Another App",
+        "icon": "/app-store.png",
+        "description": "You have a notification!"
+      },
+      {
+        "name": "Another App",
+        "icon": "/app-store.png",
+        "description": "You have a notification!"
+      },
+      {
+        "name": "Another App",
+        "icon": "/app-store.png",
+        "description": "You have a notification!"
+      },
+      {
+        "name": "Another App",
+        "icon": "/app-store.png",
+        "description": "You have a notification!"
+      },
+      {
+        "name": "Another App",
+        "icon": "/app-store.png",
+        "description": "You have a notification!"
+      },
+      {
+        "name": "Another App",
+        "icon": "/app-store.png",
+        "description": "You have a notification!"
+      },
+        {
+            "name": "Another App",
+            "icon": "/app-store.png",
+            "description": "You have a notification!"
+        },
+        {
+            "name": "Another App",
+            "icon": "/app-store.png",
+            "description": "You have a notification!"
+        },{
+            "name": "Another App",
+            "icon": "/app-store.png",
+            "description": "You have a notification!"
+        },{
+            "name": "Another App",
+            "icon": "/app-store.png",
+            "description": "You have a notification!"
+        },{
+            "name": "Another App",
+            "icon": "/app-store.png",
+            "description": "You have a notification!"
+        }
+  ]
+  
